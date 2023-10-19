@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00FFFF;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        #about, #projects {
+            text-align: center;
+            background-color: #A9A9A9;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NANDHINI PHOTOGRAPHIES</h1>
+        <img src="C:\Users\Anani Pandian\Downloads\nlogo.jpg" style="height:150px; border-radius: 50%; border: 10px solid black;" alt="This is a small profile image of my intial.">
+       </div>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am good at capturing moments.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <img src="C:\Users\Anani Pandian\Downloads\cloudy.jpg" alt="cloud" width="300" height="300">
+            <p>It is a picture of cloudy weather.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="C:\Users\Anani Pandian\Downloads\stream.jpg" alt="stream" width="300" height="300">
+            <p>It is a picture of water stream.</p>
+        </div>
+    </section>
+
+    <script>
+        // You can add some JavaScript functionality here if needed.
+// JavaScript functionalities
+        // 1. Simple console log
+        console.log("Welcome to My Digital Portfolio!");
+
+        // 2. Alert box
+        window.alert("Thanks for visiting my portfolio!");
+
+        // 3. Event listener example
+        const projects = document.querySelectorAll('.project');
+        projects.forEach(project => {
+            project.addEventListener('click', () => {
+                alert('You clicked on ' + project.querySelector('h3').innerText);
+            });
+        });
+    </script>
+</body>
+</html>
